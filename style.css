@@ -1,0 +1,102 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 0;
+}
+
+/* Landing Page */
+.landing-page {
+    padding: 50px;
+}
+
+/* Make the text smaller and image resize for mobile devices */
+.landing-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.friend-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Friend Page */
+.friend-page {
+    padding: 50px;
+}
+
+/* Make the text smaller for small screens */
+.friend-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Bye Page */
+.bye-page {
+    padding: 50px;
+}
+
+.bye-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.goodbye-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+/* Responsive Styles: Mobile-first */
+@media (max-width: 768px) {
+
+    .landing-page h1,
+    .friend-page h1,
+    .bye-page h1 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-page h1 {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .friend-img,
+    .goodbye-img {
+        width: 80%;
+    }
+}
